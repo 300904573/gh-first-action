@@ -1,0 +1,16 @@
+# This is a basic workflow to help you get started with Actions
+
+name: first-workflow
+
+# Controls when the workflow will run
+on: workflow_dispatch #manually start workflow
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  first-job: #custom name
+    runs-on: ubuntu-latest #define runners
+    steps:
+      - name: print greetings 
+        run: echo "Hello world"
+      - name: print goodbye
+        run: echo "done - bye"
