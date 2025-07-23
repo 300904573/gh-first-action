@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest #define runners
     steps:
       - name: print greetings 
-        run: echo "Hello world"
+        run: |
+          echo "Hello world"
+          echo "Hello, there"
       - name: print goodbye
         run: echo "done - bye"
